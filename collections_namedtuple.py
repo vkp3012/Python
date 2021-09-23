@@ -22,6 +22,7 @@ xyz = car(Price=10000,Mileage=30,Colour = 'Cyan' ,Class='Y')
 print(xyz.Class)
 --------------------------------
 """
+
 N = int(input())
 fields = input().split()
 total = 0
@@ -31,3 +32,24 @@ for i in range(N):
     student = students(field1,field2,field3,field4)
     total += int(student.MARKS)
 print('{:.2f}'.format(total/N))
+
+
+
+
+"""
+Defaultdict()
+
+The defaultdict tool is a container in the collections class of Python. 
+It's similar to the usual dictionary (dict) container, but the only difference is 
+that a defaultdict will have a default value if that key has not been set yet. 
+If you didn't use a defaultdict you'd have to check to see if that key exists, 
+and if it doesn't, set it to what you want.
+"""
+
+from collections import defaultdict
+d = defaultdict(list)
+d['python'].append("awesome")
+d['Something-else'].append('not relevant')
+d['python'].append("langauge")
+for i in d.items():
+    print(i)
