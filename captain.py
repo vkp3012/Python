@@ -20,7 +20,8 @@ k = int(input())
 arr = list(map(int,input().split()))
 
 myarr = set(arr)
-print (myarr)
+#print (myarr)
+print(((sum(myset)*k)-(sum(arr)))//(k-1))
 """
 
 k = int(input())
