@@ -25,7 +25,7 @@ print("\t\tCOLLEGE: ",college)
 print("\n\t\tNAME: ",name,"\t\tFATHER NAME: ",fname)
 print("\n\t\tROLL NUMBER: ",rnumber)
 
-print("\n\t\t SUBJECTS                  MARK1           MARK2                 TOTAL")
+print("\n\t\t SUBJECTS              MARK1             MARK2           TOTAL")
 
 for (x,y,z) in zip(subjcode,midmarks,semmarks):
     print("\n\t\t",x, "              ",y,"            ",z,"           ",y+z)
