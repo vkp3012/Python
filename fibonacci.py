@@ -47,3 +47,16 @@ if __name__ == '__main__':
     n = int(input())
     print(list(map(cube,fibonacci(n))))
     
+"""
+
+# Find The Fibonacci Number
+def fibonacci(n):
+    list = [0,1]
+    for x in range(2,n):
+        list.append(list[x-2]+list[x-1])
+    return(list[0:n])
+
+if __name__ == '__main__':
+    n = int(input())
+    print(list(fibonacci(n)))
+"""
