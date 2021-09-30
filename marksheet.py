@@ -37,3 +37,5 @@ if count == 0:
     print("\n\t\tTOTAL MARKS:",MTotal,"\t\tRESULT: PASS")
 else:
     print("\n\t\tTOTAL MARKS:",MTotal,"\t\tRESULT: FAIL")
+
+print("\n\n\t\t******************************* ❤️End❤️ *****************************************\n\n")

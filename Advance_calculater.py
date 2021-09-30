@@ -6,7 +6,7 @@ from tkinter import *
 win = Tk()
 
 # This is for the size of the window
-win.geometry('350x400+500+100')
+win.geometry('250x400+500+100')
 
 # This is to prevent from resizing the window
 win.resizable(0,0)
@@ -22,6 +22,11 @@ expression = " "
 # 'btn_click' function : 
 # This Function continuously updates the 
 # input field whenever you enter a number
+
+def display(number):
+    global expression
+    expression = expression + str(number)
+    input_text['text'] = expression
 
 def btn_click(item):
     global expression
@@ -42,8 +47,29 @@ def bt_clear():
 def bt_equal():
     global expression
     #'eval':This function is used to evaluates the string expression directly
-    result = str(eval(expression))
-    input_text.set(result)
+    add = str(eval(expression))
+    input_text.set(add)
+    expression = " "
+
+def bt_equal():
+    global expression
+    #'eval':This function is used to evaluates the string expression directly
+    sub = str(eval(expression))
+    input_text.set(sub)
+    expression = " "
+
+def bt_equal():
+    global expression
+    #'eval':This function is used to evaluates the string expression directly
+    mul = str(eval(expression))
+    input_text.set(mul)
+    expression = " "
+
+def bt_equal():
+    global expression
+    #'eval':This function is used to evaluates the string expression directly
+    div = str(eval(expression))
+    input_text.set(div)
     expression = " "
 
 # Let us creating a frame for the input field
